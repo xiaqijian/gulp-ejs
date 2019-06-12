@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 移动端 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./css/industries.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<title>index</title>
+</head>
+<body>
+	<%-include include/head.ejs%>
+	<div class="body">
+		<div class="headerImage">
+			<div class="headerImage_con">
+				<p>You can say something here，</p>
+				<P>slogan，for example</P>
+				<P>Please don’t put too mach text.</P>
+			</div>
+		</div>
+		<div class="bodyContent">
+			<div class="contentLeft">
+				<ul>
+					<li class="select">Chemicals</li>
+					<li >Metal Plating</li>
+					<li >Mining</li>
+					<li ><span class="haha">Potable and ground water</span> </li>
+					<li >Power</li>
+					<li >Panel and Semiconductor</li>
+					<li >Sweetener & Sugar</li>
+				</ul>
+			</div>
+			<div class="contentRight">
+				<div class="content-inner" style="display: block;">
+					<div class="contitle">
+							Chemicals Industrise(H1)
+					</div>
+					<div class="contindu">
+						<p>
+							<span class="span1">IXTEQLITE PMB-16</span>
+							<span class="span2">is a highly regenerated gel type mixed bed resin with high purity and capacity.</span>
+						</p>
+					</div>
+				</div>
+				<div class="content-inner" style="display: none;">
+						<p>222</p>
+				</div>
+				<div class="content-inner" style="display: none;">
+						<p>333</p>
+				</div>
+				<div class="content-inner" style="display: none;">
+						<p>444</p>
+				</div>
+				<div class="content-inner" style="display: none;">
+						<p>555</p>
+				</div>
+				<div class="content-inner" style="display: none;">
+						<p>666</p>
+				</div>
+				<div class="content-inner" style="display: none;">
+						<p>777</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<%-include include/foot.ejs%>
+</body>
+</html>
+<script>
+	window.onload=function(){
+		var notic_tit=document.querySelector(".contentLeft");
+		var li=notic_tit.getElementsByTagName("li");    
+		var content_inner=document.getElementsByClassName("content-inner");
+		for(var i=0;i<li.length;i++){
+			li[i].id=i;                    
+			li[i].onclick=function(){
+				for(var j=0;j<li.length;j++){
+					li[j].className="";
+					content_inner[j].style.display="none";
+				}
+				this.className="select";
+				content_inner[this.id].style.display="block";
+			}
+		}
+	}
+</script>

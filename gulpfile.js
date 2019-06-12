@@ -4,6 +4,17 @@ const ejs = require('gulp-ejs')
 const autoprefixer = require('gulp-autoprefixer');
 
 
+let browserSync = require('browser-sync').create();
+
+// 静态服务器
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    });
+});
+
 gulp.task('less', function(){
 	gulp.src('views/less/*.less')
 	.pipe(less())
@@ -24,7 +35,8 @@ gulp.task('autoejs',function(){
 gulp.task('ejs',function(){
 	gulp.src('views/ejs/*.ejs')
 	.pipe(ejs({},{},{ext: '.html'}))
-	.pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('dist/'))
+    .pipe(browserSync.reload({stream:true}));
 })
 
 
@@ -39,4 +51,4 @@ gulp.task('app', () =>
 );
 
 
-gulp.task('default',['auto','less','autoejs','ejs'])
+gulp.task('default',['browser-sync','auto','less','autoejs','ejs'])

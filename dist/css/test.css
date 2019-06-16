@@ -1,3 +1,99 @@
 .test {
   color: red;
 }
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.foot {
+  background: #D8D8D8;
+  color: #494949;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.foot .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.foot .content .logo {
+  width: 118px;
+  float: left;
+  margin-top: 21px;
+}
+.foot .content .logo img {
+  width: 100%;
+}
+.foot .content .foottext {
+  float: left;
+  margin-top: 21px;
+  margin-left: 50px;
+}
+.foot .content .foottext > div {
+  margin-bottom: 5px;
+}
+.foot .content .copytext {
+  float: right;
+  margin-top: 64px;
+}
+.minddle {
+  width: 1200px;
+  margin: 0 auto;
+}
+.minddle .banner {
+  position: relative;
+}
+.minddle .banner .text {
+  position: absolute;
+  top: 78px;
+  left: 50px;
+  width: 800px;
+  height: 144px;
+  font-size: 34px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 48px;
+}
+.minddle .contact {
+  margin-top: 10px;
+}
+.minddle .contact .tit {
+  width: 1200px;
+  height: 42px;
+  font-size: 30px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.minddle .contact .tel {
+  margin-bottom: 10px;
+}
+.minddle .contact .tel .left {
+  width: 35px;
+  height: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 20px;
+  display: inline;
+}
+.minddle .contact .tel .right {
+  width: 980px;
+  height: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 20px;
+  display: inline;
+}

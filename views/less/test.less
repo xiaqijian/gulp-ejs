@@ -1,1 +1,60 @@
 @import 'include/test.less';
+@import 'include/headfoot.less';
+
+.minddle {
+  width: 1200px;
+  margin: 0 auto;
+  .banner {
+    position: relative;
+    .text {
+      position: absolute;
+      top: 78px;
+      left: 50px;
+      width:800px;
+      height:144px;
+      font-size:34px;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      line-height:48px;
+    }
+  }
+  .contact {
+    margin-top: 10px;
+    .tit {
+      width:1200px;
+      height:42px;
+      font-size:30px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(73,73,73,1);
+      line-height:42px;
+      margin-bottom: 20px;
+    }
+    .tel {
+      margin-bottom: 10px;
+      .left {
+        width:35px;
+        height:20px;
+        font-size:14px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(73,73,73,1);
+        line-height:20px;
+        display: inline;
+      }
+      .right {
+        width:980px;
+        height:20px;
+        font-size:14px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(73,73,73,1);
+        line-height:20px;
+        display: inline;
+
+      }
+    }
+  }
+}
+

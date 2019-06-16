@@ -1,3 +1,45 @@
-<div class="test">
-	<h1>我是头</h1>
+<div class="head">
+	<div class="content">
+		<div class="logobox">
+			<img src="/images/logo.jpeg" alt="">
+		</div>
+    <div class="navbox">
+			<ul class="ulbox">
+				<li>
+					home
+				</li>
+				<li>About Ixteq</li>
+				<li>Products
+					<div class="downnav">
+						<div class="downnavli">Adsorbent</div>
+						<div class="">Catalyst</div>
+						<div class="">Chelation resins</div>
+						<div class="">Polishing Mixed Bed</div>
+						<div class="">Strong Acid Cation</div>
+						<div class="">Strong Base Anion</div>
+						<div class="">Weak Acid Cation</div>
+						<div class="">Weak Base Anion</div>
+						<!-- <div class="">Adsorbent</div> -->
+					</div>
+				</li>
+				<li>Applicatons</li>
+				<li>Industries</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+	</div>
 </div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	$('.downnav div').hover(function(e) {
+		console.log($(this))
+		$(this).siblings().removeClass('downnavli')
+		$(this).addClass('downnavli')
+	})
+})
+
+</script>

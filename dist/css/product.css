@@ -1,0 +1,97 @@
+.wrapper {
+  width: 62%;
+  margin: auto;
+  min-width: 1200px;
+}
+.wrapper h3 {
+  font-size: 30px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.wrapper h4 {
+  font-size: 20px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 28px;
+  margin: 20px 0;
+}
+.wrapper .banner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.wrapper .banner img {
+  width: 100%;
+}
+.wrapper .banner .descript {
+  position: absolute;
+  left: 0;
+  top: 23%;
+  padding: 2% 10% 2% 4%;
+  font-size: 34px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 48px;
+}
+.wrapper .none {
+  display: none;
+}
+.wrapper .active {
+  color: #6B9CD4;
+  border-left: 5px solid #6B9CD4;
+}
+.wrapper #test {
+  float: left;
+  width: 20%;
+}
+.wrapper #test ul {
+  background: #f5f5f5;
+  width: 100%;
+  height: 400px;
+  font-size: 14px;
+}
+.wrapper #test ul li {
+  float: left;
+  padding: 10px 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.wrapper #sub {
+  float: right;
+  width: 77%;
+}
+.wrapper #sub table {
+  width: 100%;
+  border-width: 1px;
+  border-color: #494949;
+  color: #494949;
+}
+.wrapper #sub table th,
+.wrapper #sub table tr,
+.wrapper #sub table td {
+  border-width: 1px;
+  border-color: #494949;
+  width: 40%;
+  padding: 0 20px;
+  height: 34px;
+  line-height: 34px;
+  color: #494949;
+}
+.wrapper #sub table tr {
+  width: 50%;
+}
+.wrapper #sub p {
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 20px;
+}
+.wrapper #sub img {
+  margin: 20px 0;
+}

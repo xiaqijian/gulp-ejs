@@ -10,6 +10,53 @@ body {
   padding: 0;
   position: relative;
 }
+.head .content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+.head .content .logobox {
+  width: 196px;
+  height: 100px;
+  float: left;
+}
+.head .content .navbox {
+  margin-top: 65px;
+  float: right;
+}
+.head .content .navbox .ulbox > li {
+  display: inline;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #6d6d6d;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.head .content .navbox .ulbox > li .downnav {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  background: #343B46;
+  z-index: 99999;
+}
+.head .content .navbox .ulbox > li .downnav > div {
+  width: 180px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #B1B4B8;
+  line-height: 20px;
+}
+.head .content .navbox .ulbox > li .downnav > div.downnavli {
+  background: #6B9CD4;
+  color: #ffffff;
+}
 .foot {
   background: #D8D8D8;
   color: #494949;

@@ -84,9 +84,15 @@ body {
   float: right;
   margin-top: 64px;
 }
+html,
+body {
+  height: 100%;
+}
 .minddle {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+  min-height: 100%;
+  margin-bottom: -100px;
 }
 .minddle .banner {
   position: relative;

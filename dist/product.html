@@ -19,12 +19,12 @@
     <div class="navbox">
 			<ul class="ulbox">
 				<li>
-					<a href="index.html">home</a>
+					<a href="/index.html">home</a>
 				</li>
 				<li>
-					<a href="About.html">About Ixteq</a></li>
+					<a href="/About.html">About Ixteq</a></li>
 				<li>
-					<a href="./product.html">Products</a>
+					<a href="/product.html">Products</a>
 					<div class="downnav">
 						<div class="downnavli">Adsorbent</div>
 						<div class="">Catalyst</div>
@@ -38,7 +38,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="./Applications.html">Adsorption</a>
+					<a href="/Applications.html">Adsorption</a>
                     <div class="downnav">
 							<div class="downnavli">Adsorption</div>
 							<div class="">Chemical process & Purification</div>
@@ -52,7 +52,7 @@
 						</div>
 				</li>
 				<li>
-					<a href="Industries.html">Industries</a>
+					<a href="/Industries.html">Industries</a>
 					<div class="downnav">
 							<div class="downnavli">Chemicals</div>
 							<div class="">Metal Plating</div>
@@ -66,7 +66,7 @@
 						</div>
 				</li>
 				<li>
-				    <a href="./Contact.html">Contact</a>	
+				    <a href="/Contact.html">Contact</a>	
 				</li>
 			</ul>
 		</div>
@@ -99,7 +99,9 @@ $(document).ready(function() {
 	$('.downnav div').click(function(e) {
 		console.log($(this).index())
 		console.log(window.location)
-		var url =  window.location.origin + '/product.html?to=' + $(this).index()
+		let parent = $(this).parent().parent().find('a').attr('href')
+		console.log(parent)
+		var url =  window.location.origin + parent + '?to=' + $(this).index()
 		// console.log(utrl)
 		window.location.href = url
 		// location.reload(); 

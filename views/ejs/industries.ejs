@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="bodyContent">
-			<div class="contentLeft">
+			<div class="contentLeft" id="test">
 				<ul>
 					<li class="select">Chemicals</li>
 					<li >Metal Plating</li>
@@ -30,7 +30,7 @@
 					<li >Sweetener & Sugar</li>
 				</ul>
 			</div>
-			<div class="contentRight">
+			<div class="contentRight" id="sub">
 				<div class="content-inner" style="display: block;">
 					<div class="contitle">
 							Chemicals Industrise(H1)
@@ -102,6 +102,19 @@
 </body>
 </html>
 <script>
+	$(document).ready(function(){
+			var href = window.location.search
+			console.log(href)
+			if(href){
+			  var arr = href.split('=')
+			  var index = Number(arr[1])
+			  console.log(index)
+			  $("#test ul li").siblings().removeClass('select')
+			  $("#test ul").find('li').eq(index).addClass('select')
+			  $('#sub').children().hide()
+			  $('#sub').find('div').eq(index).show()
+			}
+		})
 	window.onload=function(){
 		var notic_tit=document.querySelector(".contentLeft");
 		var li=notic_tit.getElementsByTagName("li");    

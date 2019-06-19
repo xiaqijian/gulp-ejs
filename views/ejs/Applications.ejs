@@ -510,4 +510,17 @@
         $('#sub').children('#' + target).removeClass('none')
 
     })
+    $(document).ready(function(){
+			var href = window.location.search
+			console.log(href)
+			if(href){
+			  var arr = href.split('=')
+			  var index = Number(arr[1])
+			  console.log(index)
+			  $("#test ul li").siblings().removeClass('active')
+			  $("#test ul").find('li').eq(index).addClass('active')
+			  $('#sub').children().addClass('none')
+			  $('#sub').find('div').eq(index).removeClass('none')
+			}
+		})
 </script>

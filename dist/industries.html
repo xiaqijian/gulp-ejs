@@ -110,7 +110,7 @@ $(document).ready(function() {
 	$('.downnav div').click(function(e) {
 		console.log($(this).index())
 		console.log(window.location)
-		let parent = $(this).parent().parent().find('a').attr('href')
+		let parent = $(this).parent().parent().find('a').attr('id')
 		console.log(parent)
 		var url =  window.location.origin + parent + '?to=' + $(this).index()
 		// console.log(utrl)

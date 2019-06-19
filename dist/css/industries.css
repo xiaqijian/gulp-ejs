@@ -1,0 +1,219 @@
+.body {
+  width: 1200px;
+  margin: auto;
+}
+.body .headerImage {
+  height: 300px;
+  background: url(/images/Industriesbanner.png);
+  background-size: 1200px 300px;
+  background-repeat: no-repeat;
+}
+.body .headerImage .headerImage_con {
+  padding-left: 50px;
+  padding-top: 78px;
+  width: 700px;
+  height: 144px;
+  font-size: 34px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 48px;
+}
+.body .bodyContent {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.body .bodyContent .contentLeft {
+  float: left;
+  background: #F5F5F5;
+  width: 190px;
+  height: 340px;
+  line-height: 40px;
+  padding-top: 10px;
+}
+.body .bodyContent .contentLeft ul li {
+  padding-left: 10px;
+  cursor: pointer;
+  width: 190px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+}
+.body .bodyContent .contentLeft ul li span {
+  width: 150px;
+  line-height: 28px;
+}
+.body .bodyContent .contentRight {
+  float: left;
+  width: 980px;
+  margin-left: 30px;
+}
+.body .bodyContent .contentRight .content-inner .contitle {
+  height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #494949;
+  line-height: 42px;
+}
+.body .bodyContent .contentRight .content-inner .contindu {
+  height: 108px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 20px;
+}
+.body .bodyContent .contentRight .content-inner .contindu .span1 {
+  display: inline-block;
+  color: #494949;
+  font-family: PingFangSC-Medium;
+  font-weight: Medium;
+}
+.body .bodyContent .contentRight .content-inner .contindu .span2 {
+  display: inline-block;
+  font-weight: PingFangSC-Regular;
+}
+.body .bodyContent .contentRight .content-inner .contentimg {
+  height: 300px;
+  background: url(/images/Industriesbanner2.png);
+  background-size: 980px 300px;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+.body .bodyContent .contentRight .content-inner .content_mid {
+  margin-top: 20px;
+  width: 980px;
+  height: 223px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 20px;
+}
+.body .bodyContent .contentRight .content-inner .contitletwo {
+  height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #494949;
+  line-height: 42px;
+  margin-top: 50px;
+}
+.body .bodyContent .contentRight .content-inner .contindutwo {
+  height: 108px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #494949;
+  line-height: 20px;
+}
+.body .bodyContent .contentRight .content-inner .contindutwo .span1 {
+  display: inline-block;
+  color: #494949;
+  font-family: PingFangSC-Medium;
+  font-weight: Medium;
+}
+.body .bodyContent .contentRight .content-inner .contindutwo .span2 {
+  display: inline-block;
+  font-weight: PingFangSC-Regular;
+}
+.body .bodyContent .contentRight .content-inner .contentimgtwo {
+  height: 300px;
+  background: url(/images/Industriesbanner3.png);
+  background-size: 980px 300px;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+.select {
+  background: white;
+  font-weight: bolder;
+  border-left: 5px solid #6B9CD4;
+  border-bottom-color: white ;
+  color: #6B9CD4;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.head .content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+.head .content .logobox {
+  width: 196px;
+  height: 100px;
+  float: left;
+}
+.head .content .navbox {
+  margin-top: 65px;
+  float: right;
+}
+.head .content .navbox .ulbox > li {
+  display: inline;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #6d6d6d;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.head .content .navbox .ulbox > li .downnav {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  background: #343B46;
+  z-index: 99999;
+}
+.head .content .navbox .ulbox > li .downnav > div {
+  width: 180px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #B1B4B8;
+  line-height: 20px;
+}
+.head .content .navbox .ulbox > li .downnav > div.downnavli {
+  background: #6B9CD4;
+  color: #ffffff;
+}
+.foot {
+  background: #D8D8D8;
+  color: #494949;
+  height: 100px;
+  width: 100%;
+}
+.foot .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.foot .content .logo {
+  width: 118px;
+  float: left;
+  margin-top: 21px;
+}
+.foot .content .logo img {
+  width: 100%;
+}
+.foot .content .foottext {
+  float: left;
+  margin-top: 21px;
+  margin-left: 50px;
+}
+.foot .content .foottext > div {
+  margin-bottom: 5px;
+}
+.foot .content .copytext {
+  float: right;
+  margin-top: 64px;
+}

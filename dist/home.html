@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 移动端 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+	<title>index</title>
+</head>
+<body>
+	<div class="head">
+	<div class="content">
+		<div class="logobox">
+			<img src="/images/logo.jpeg" alt="">
+		</div>
+    <div class="navbox">
+			<ul class="ulbox">
+				<li>
+					<a href="home.html">home</a>home
+				</li>
+				<li>
+					<a href="About.html">About Ixteq</a></li>
+				<li>
+					<a href="./product.html">Products</a>
+					<div class="downnav">
+						<div class="downnavli">Adsorbent</div>
+						<div class="">Catalyst</div>
+						<div class="">Chelation resins</div>
+						<div class="">Polishing Mixed Bed</div>
+						<div class="">Strong Acid Cation</div>
+						<div class="">Strong Base Anion</div>
+						<div class="">Weak Acid Cation</div>
+						<div class="">Weak Base Anion</div>
+						<!-- <div class="">Adsorbent</div> -->
+					</div>
+				</li>
+				<li>
+					<a href="Applicatons.html">Adsorption</a>
+                    <div class="downnav">
+							<div class="downnavli">Adsorption</div>
+							<div class="">Chemical process & Purification</div>
+							<div class="">Drinking Water</div>
+							<div class="">Food</div>
+							<div class="">Metal removal & recovery</div>
+							<div class="">Softening & Demineralization</div>
+							<div class="">Ultra pure water</div>
+							<div class="">Waste Water & reuse</div>
+							<!-- <div class="">Adsorbent</div> -->
+						</div>
+				</li>
+				<li>
+					<a href="Industries.html">Industries</a>
+					<div class="downnav">
+							<div class="downnavli">Chemicals</div>
+							<div class="">Metal Plating</div>
+							<div class="">Mining</div>
+							<div class="">Potable and ground water</div>
+							<div class="">Power</div>
+							<div class="">Panel and Semiconductor</div>
+							<div class="">Sweetener & Sugar</div>
+							<!-- <div class="">Waste Water & reuse</div> -->
+							<!-- <div class="">Adsorbent</div> -->
+						</div>
+				</li>
+				<li>
+				    <a href="./index.html">Contact</a>	
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$('.ulbox li').find('div').hide()
+$(document).ready(function() {
+	
+	$('.downnav div').hover(function(e) {
+		// console.log($(this))
+		$(this).siblings().removeClass('downnavli')
+		$(this).addClass('downnavli')
+	})
+	$('.ulbox li').mouseover(function(e) {
+		console.log(22)
+		// console.log($(this))
+		$(this).find('div').show()
+		$(this).siblings().find('div').hide()
+
+		
+	})
+	$('.downnav').mouseleave(function(){
+        $('.ulbox li').find('div').hide()
+
+	})
+	$('.downnav div').click(function(e) {
+		console.log($(this).index())
+		console.log(window.location)
+		var url =  window.location.origin + '/product.html?to=' + $(this).index()
+		// console.log(utrl)
+		window.location.href = url
+		// location.reload(); 
+	})
+
+})
+
+</script>
+	   <div class="wrapper ">
+           <div class="banner animated fadeInRight">
+               <img src="./images/home banner.png" alt="">
+                <p class="descript">You can say something here， slogan，for example Please don’t put too mach text.</p>
+           </div>
+           <div class="nav clearfix">
+            <div class="nav-left-tab animated fadeInLeft">
+                <h3>What's About Ixteq?</h3>
+                <p>
+                 An application for something such as a job or membership of an organization is a formal written request for it. An application for something such as a job or membership of an organization is a formal written request for it.An
+                  application for something such as a job or membership of an organization is a formal written request for it. 
+                </p>
+                <div class="learn-more">
+                 LEARN MORE >>
+                </div>
+            </div>
+            <div class="nav-right-tab animated fadeInRight">
+                <ul>
+                    <li>
+                        <img src="./images/Adsorbent.png" alt="">
+                        <p>
+                            Adsorbent
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/Catalyst.png" alt="">
+                        <p>
+                            Catalyst
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/Chelation resins.png" alt="">
+                        <p>
+                            Chelation resins
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/Polishing Mixed Bed.png" alt="">
+                        <p>
+                            Polishing Mixed Bed
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/Strong Acid Cation.png" alt="">
+                        <p>
+                            Strong Acid Cation
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/Strong Base Anion.png" alt="">
+                        <p>
+                            Strong Base Anion
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                      
+                        <img src="./images/Weak Acid Cation.png" alt="">
+                        <p>
+                            Weak Acid Cation
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/Weak Base Anion.png" alt="">
+                        <p>
+                            Weak Base Anion
+                        </p>
+                        <div>
+                            An application for something such as a job or 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+           </div>
+           <div class="section clearfix animated fadeInUp">
+               <div class="section-intro">
+                <h3>Introduce APPlictions</h3>
+                <p>
+                    An application for something such as a job or membership of an organization is a formal written request for it. An application for something such as a job or membership of an organization is a formal written request for it.An application for something such as a job or membership of an organization. An application for something such as a job or membership of an organization is a formal written request for it. An application for something such as a job or membership of an organization is a formal written request for it.An application for something such as a job or 
+                    membership of an organization. An application for something such as a job or membership of an organization 
+                </p>
+                <div class="learn-more flo-right">
+                    LEARN MORE >>
+                   </div>
+               </div>
+               <div class="secton-pic">
+                      <img src="./images/home banner2.png" alt="">
+               </div>
+           </div>
+       </div>
+	<div class="foot">
+	<div class="content">
+		<div class="logo">
+			<img src="/images/logo.jpeg" alt="">
+		</div>
+		<!-- <h1>我是尾部</h1> -->
+		<div class="foottext">
+			<div>电话：0571-7888299</div>
+			<div>邮箱：aaa@ixteq.com</div>
+			<div>地址：杭州市西湖区云溪小镇1888号8幢</div>
+		</div>
+		<div class="copytext">
+				Copyright@2019ixteq.com
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    　$('.wrapper').css({'animation-duration':'.3s','animation-delay':'3s'})
+</script>

@@ -1,0 +1,119 @@
+.wrapper {
+  width: 62%;
+  margin: auto;
+  min-width: 900px;
+  font-family: PingFangSC-Regular;
+}
+.wrapper .animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.wrapper h3 {
+  font-size: 30px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.wrapper .learn-more {
+  font-size: 16px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #6b9cd4;
+  line-height: 22px;
+  margin-top: 6px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.wrapper .banner {
+  width: 100%;
+  position: relative;
+}
+.wrapper .banner img {
+  width: 100%;
+}
+.wrapper .banner .descript {
+  position: absolute;
+  left: 0;
+  top: 23%;
+  padding: 2% 10% 2% 4%;
+  width: 32%;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 28px;
+  font-size: 17px;
+}
+.wrapper .nav {
+  margin: 50px 0;
+  width: 100%;
+}
+.wrapper .nav .nav-left-tab {
+  padding: 3%;
+  background: #f5f5f5;
+  float: left;
+  width: 24%;
+  font-weight: 400;
+  color: #494949;
+  line-height: 20px;
+}
+.wrapper .nav .nav-right-tab {
+  width: 65%;
+  float: right;
+}
+.wrapper .nav .nav-right-tab ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.wrapper .nav .nav-right-tab ul li {
+  width: 23%;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.wrapper .nav .nav-right-tab ul li img {
+  width: 30px;
+  height: 30px;
+}
+.wrapper .nav .nav-right-tab ul li p {
+  margin: 20px auto 10px;
+  font-size: 18px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 25px;
+}
+.wrapper .nav .nav-right-tab ul li div {
+  font-weight: 400;
+  color: #494949;
+  line-height: 20px;
+}
+.wrapper .section .section-intro {
+  float: left;
+  width: 64%;
+  border: 1px solid rgba(73, 73, 73, 0.2);
+  padding: 2%;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #494949;
+  line-height: 20px;
+}
+.wrapper .section .section-intro .flo-right {
+  float: right;
+}
+.wrapper .section .secton-pic {
+  float: right;
+  width: 31%;
+  height: 332px;
+}
+.wrapper .section .secton-pic img {
+  width: 100%;
+  height: 100%;
+}

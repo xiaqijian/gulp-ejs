@@ -17,12 +17,12 @@
     <div class="navbox">
 			<ul class="ulbox">
 				<li>
-					<a href="/index.html">home</a>
+					<a href="./index.html" id="/index.html">home</a>
 				</li>
 				<li>
-					<a href="/About.html">About Ixteq</a></li>
+					<a href="./About.html" id="/About.html">About Ixteq</a></li>
 				<li>
-					<a href="/product.html">Products</a>
+					<a href="./product.html" id="/product.html">Products</a>
 					<div class="downnav">
 						<div class="downnavli">Adsorbent</div>
 						<div class="">Catalyst</div>
@@ -36,8 +36,8 @@
 					</div>
 				</li>
 				<li>
-					<a href="/Applications.html">Adsorption</a>
-                    <div class="downnav">
+					<a href="./Applications.html" id="/Applications.html">Adsorption</a>
+              <div class="downnav">
 							<div class="downnavli">Adsorption</div>
 							<div class="">Chemical process & Purification</div>
 							<div class="">Drinking Water</div>
@@ -50,7 +50,7 @@
 						</div>
 				</li>
 				<li>
-					<a href="/Industries.html">Industries</a>
+					<a href="./Industries.html" id="/Industries.html">Industries</a>
 					<div class="downnav">
 							<div class="downnavli">Chemicals</div>
 							<div class="">Metal Plating</div>
@@ -64,17 +64,30 @@
 						</div>
 				</li>
 				<li>
-				    <a href="/Contact.html">Contact</a>	
+				    <a href="./Contact.html" id="/Contact.html">Contact</a>	
 				</li>
 			</ul>
 		</div>
 	</div>
 </div>
-
+<style>
+.colorlink {
+	color: #6B9CD4;
+}
+</style>
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
 $('.ulbox li').find('div').hide()
+var urlss = window.location.pathname
+console.log(urlss)
+	$(".ulbox a").each(function(index){
+		let hrefs = $(this).attr('id')
+		if(urlss === hrefs) {
+			$(".ulbox a").eq(index).addClass('colorlink')
+		}
+		console.log(hrefs)
+	})
 $(document).ready(function() {
 	
 	$('.downnav div').hover(function(e) {

@@ -7,7 +7,7 @@
 }
 .body .headerImage {
   height: 300px;
-  background: url(/images/Industriesbanner.png);
+  background: url(../images/Industriesbanner.png);
   background-size: 1200px 300px;
   background-repeat: no-repeat;
 }
@@ -78,7 +78,7 @@
 }
 .body .bodyContent .contentRight .content-inner .contentimg {
   height: 300px;
-  background: url(/images/Industriesbanner2.png);
+  background: url(../images/Industriesbanner2.png);
   background-size: 980px 300px;
   background-repeat: no-repeat;
   margin-top: 20px;
@@ -121,7 +121,7 @@
 }
 .body .bodyContent .contentRight .content-inner .contentimgtwo {
   height: 300px;
-  background: url(/images/Industriesbanner3.png);
+  background: url(../images/Industriesbanner3.png);
   background-size: 980px 300px;
   background-repeat: no-repeat;
   margin-top: 20px;

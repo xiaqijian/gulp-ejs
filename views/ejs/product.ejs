@@ -24,15 +24,18 @@
 			<div class="nav" id="test">
 				<ul>
 					<li data-id="a" class="active">
-						Adsorption
+					    Adsorbent
 					</li>
-					<li data-id="b">Chemical process & Purification</li>
-					<li data-id="c">Drinking Water</li>
-					<li data-id="e">Food</li>
-					<li data-id="f">Metal removal & recovery</li>
-					<li data-id="g">Softening & Demineralization</li>
-					<li data-id="h">Ultra pure water</li>
-					<li data-id="i">Waste Water & reuse</li>
+					<li data-id="b" class="">Catalyst</li>
+					<li data-id="c" class="">Chelation resins</li>
+					<li data-id="e" class="">Polishing Mixed Bed</li>
+					<li data-id="f" class="">Polishing Mixed Resin</li>
+					<li data-id="g" class="">Strong Acid Cation</li>
+					<li data-id="h" class="">Strong Base Anion</li>
+					<li data-id="i" class="">Strong Acid Cation</li>
+					<li data-id="i" class="">Strong Base Anion</li>
+					<li data-id="i" class="">Weak Acid Cation</li>
+					<li data-id="i" class="">Weak Base Anion</li>
 				</ul>
 			</div>
 			<!--  -->
@@ -353,7 +356,7 @@
 						responsibility. Material safety Data Sheets outlining
 						the hazards and handling methods for our products are available on request.a
 					</p>
-					<img src="./images/Applicatons banner2.png" alt="">
+					<!-- <img src="./images/Applicatons banner2.png" alt=""> -->
 					<p>
 						Ixteqlite a trademark of IXTEQ Inc. and its affiliates, USA. Ion exchange resins and polymeric
 						adsorbents may contain by-products resulting form the manufacture process. The user must
@@ -486,6 +489,14 @@
 						outlining the hazards and handling methods for our products are available on request.a
 					</p>
 				</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
+				<div>Weak Base Anion</div>
 			</div>
 		</div>
 	</div>
@@ -497,11 +508,25 @@
 	</html>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script>
+		$(document).ready(function(){
+			var href = window.location.search
+			console.log(href)
+			if(href){
+			  var arr = href.split('=')
+			  var index = Number(arr[1])
+			  console.log(index)
+			  $("#test ul li").siblings().removeClass('active')
+			  $("#test ul").find('li').eq(index).addClass('active')
+			  $('#sub').children().addClass('none')
+			  $('#sub').find('div').eq(index).removeClass('none')
+			}
+		})
 		$('#test').on('click', 'ul li', function () {
 			$(this).siblings().removeClass('active')
 			$(this).addClass('active');
-			var target = $(this).data('id');
+			
 			$('#sub').children().addClass('none')
-			$('#sub').children('#' + target).removeClass('none')
+			$('#sub').find('div').eq($(this).index()).removeClass('none')
 		})
+		
 	</script>

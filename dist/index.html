@@ -52,7 +52,7 @@
 						</div>
 				</li>
 				<li>
-					<a href="./Industries.html" id="/industries.html">Industries</a>
+					<a href="./industries.html" id="/industries.html">Industries</a>
 					<div class="downnav">
 							<div class="downnavli">Chemicals</div>
 							<div class="">Metal Plating</div>
@@ -85,7 +85,7 @@ var urlss = window.location.pathname
 console.log(urlss)
 	$(".ulbox a").each(function(index){
 		let hrefs = $(this).attr('id')
-		if(urlss === hrefs) {
+		if(urlss.search(hrefs) != -1 ) {
 			$(".ulbox a").eq(index).addClass('colorlink')
 		}
 		console.log(hrefs)
@@ -238,7 +238,7 @@ $(document).ready(function() {
 	<div class="foot">
 	<div class="content">
 		<div class="logo">
-			<img src="/images/logo.jpeg" alt="">
+			<img src="./images/logo.jpeg" alt="">
 		</div>
 		<!-- <h1>我是尾部</h1> -->
 		<div class="foottext">

@@ -4,7 +4,7 @@
 }
 .body .bodyHeader {
   height: 300px;
-  background: url(/images/About.png);
+  background: url(../images/About.png);
   background-size: 1200px 300px;
   background-repeat: no-repeat;
 }
@@ -50,7 +50,7 @@
 }
 .body .bodyImage .bodyImageLeft .leftTop {
   height: 300px;
-  background: url(/images/AboutIxteqbanner2.png);
+  background: url(../images/AboutIxteqbanner2.png);
 }
 .body .bodyImage .bodyImageLeft .leftTitle {
   margin-top: 15px;
@@ -79,7 +79,7 @@
 }
 .body .bodyImage .bodyImageMiddle .MiddleTop {
   height: 300px;
-  background: url(/images/AboutIxteqbanner2.png);
+  background: url(../images/AboutIxteqbanner2.png);
 }
 .body .bodyImage .bodyImageMiddle .MiddleTitle {
   margin-top: 15px;
@@ -108,7 +108,7 @@
 }
 .body .bodyImage .bodyImageRight .RightTop {
   height: 300px;
-  background: url(/images/AboutIxteqbanner2.png);
+  background: url(../images/AboutIxteqbanner2.png);
 }
 .body .bodyImage .bodyImageRight .RightTitle {
   margin-top: 15px;
